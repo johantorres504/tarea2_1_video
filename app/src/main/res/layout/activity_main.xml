@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/camara_video"
+    android:orientation="vertical"
+    android:visibility="visible"
+    tools:context=".MainActivity">
+
+    <VideoView
+        android:id="@+id/videoP"
+        android:layout_width="350dp"
+        android:layout_height="400dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.11" />
+
+    <Button
+        android:id="@+id/btnGrabarvideo"
+        android:layout_width="170dp"
+        android:layout_height="60dp"
+        android:backgroundTint="#0665AF"
+        android:onClick="Grabar_Video"
+        android:text="@string/grabarVideo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.103"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.687" />
+
+    <Button
+        android:id="@+id/btnSalvar"
+        android:layout_width="180dp"
+        android:layout_height="60dp"
+        android:backgroundTint="#0665AF"
+        android:text="@string/salvarVideo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.93"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/videoP"
+        app:layout_constraintVertical_bias="0.669" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="218dp"
+        android:layout_height="67dp"
+        android:background="@android:drawable/btn_dropdown"
+        android:foregroundTint="#009688"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.939" />
+
+    <Button
+        android:id="@+id/btnReproducir"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:backgroundTint="#0665AF"
+        android:onClick="reproducirVideo"
+        android:text="@string/reproducirVideo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/videoP"
+        app:layout_constraintVertical_bias="0.796" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
